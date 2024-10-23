@@ -1,0 +1,34 @@
+server:
+  port: 2023
+
+spring:
+  application:
+    name: Backend
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:5433/vitalhealthsolutions
+    username: root
+    password: Lalitesh@2004
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mail:
+    port: 587
+    host: smtp.gmail.com
+    username: vitalstats2023@gmail.com
+    password: lrsi yuiq eghr jgkz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+api-key: 1234567890
